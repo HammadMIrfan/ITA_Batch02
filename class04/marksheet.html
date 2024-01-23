@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        body{
+            background-color: rgb(6, 6, 45);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <script>
+
+const Id = prompt("The Student Id Is");
+const StudentName = prompt("The Student StudentName Is");
+const StudentClass = prompt("The Student StudentClass Is");
+const TotalScore = 500
+
+const English = parseInt(prompt("The Score of English Is "));
+const Maths = parseInt(prompt("The Score of Maths Is "));
+const Science = parseInt(prompt("The Score of Science Is "));
+const Urdu = parseInt(prompt("The Score of Urdu Is "));
+const Islamiat = parseInt(prompt("The Score of Islamiat Is "));
+
+const GainingScore = English + Maths + Science + Urdu + Islamiat
+const Percentage = GainingScore / TotalScore * 100
+
+// console.log(Percentage)
+
+document.write(`The Student Id Is ${Id} <br>`)
+document.write(`The Student Name Is ${StudentName} <br>`)
+document.write(`The Student Class Is ${StudentClass} <br>`)
+document.write(`The Total Score Is ${TotalScore} <br>`)
+document.write(`The English Score Is ${English} <br>`)
+document.write(`The Maths Score Is ${Maths} <br>`)
+document.write(`The Science Score Is ${Science} <br>`)
+document.write(`The Urdu Score Is ${Urdu} <br>`)
+document.write(`The Islamiat Score Is ${Islamiat} <br>`)
+document.write(`The Gaining Score Is ${GainingScore} <br>`)
+document.write(`The Percentage Is ${Percentage} % <br>`)
+
+
+
+
+    </script>
+
+
+</body>
+</html>
